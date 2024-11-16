@@ -1,9 +1,6 @@
 import React from "react";
 import { ThreeDCard } from "./ThreeDCard";
 import Title from "./Title";
-// import bettingImg from "../../../public/betting-img.png";
-import { IconType } from "react-icons";
-import { FaReact } from "react-icons/fa6";
 
 interface WorkProjectData {
   title: string;
@@ -121,8 +118,8 @@ export const WorkProject: React.FC = () => {
           <Title title="Recent Work Project" />
         </div>
         <div className="w-full grid grid-cols-1  md:grid-cols-2 justify-between md:gap-12 gap-6 ">
-          {workProjectData.map((data) => (
-            <ThreeDCard data={data} />
+          {workProjectData.map((data, index) => (
+            <ThreeDCard key={index} data={data} />
           ))}
         </div>
       </div>

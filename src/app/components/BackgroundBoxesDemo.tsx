@@ -2,10 +2,8 @@
 import React from "react";
 import { Boxes } from "./ui/background-boxes";
 import { cn } from "../../utils/utils";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { Cover } from "../components/ui/cover";
 import { FlipWords } from "./ui/flip-words";
-// import { TailwindcssButtons } from "./HomePageButton";
 
 export function BackgroundBoxesDemo() {
   const words = ["Experiences", "Adventures", "Magic", "Marvels"];
@@ -22,12 +20,8 @@ export function BackgroundBoxesDemo() {
         >
           Hola! I'm <Cover>SHASHVAT SEN</Cover> — Turning Ideas into Interactive{" "}
           <FlipWords words={words} />! <br />
-          {/* <span className="text-red-600">Experiences</span>! */}
-          {/* <TextGenerateEffect words={words} /> */}
         </h1>
         <p className="text-center mt-2 text-neutral-300 relative z-20  text-xs md:text-sm">
-          {/* <TextGenerateEffect words={words} />
-           */}
           I'm a full-stack developer who loves to think big and code bigger!
           Whether it's creating interactive apps, boosting website performance,
           or pushing design boundaries, I'm all about adding that extra wow

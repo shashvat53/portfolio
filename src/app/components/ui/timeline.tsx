@@ -1,7 +1,7 @@
 "use client";
 import { titleAnimation } from "@/utils/titleMotion";
 import {
-  useMotionValueEvent,
+  
   useScroll,
   useTransform,
   motion,

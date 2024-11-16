@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { BackgroundBoxesDemo } from "./components/BackgroundBoxesDemo";
 import { Navbar } from "./components/Navbar";
 

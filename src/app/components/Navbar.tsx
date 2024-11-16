@@ -1,13 +1,12 @@
 "use client";
 import React, { useState, MouseEvent } from "react";
-import { HoveredLink, Menu } from "./ui/navbar-menu";
+import { HoveredLink } from "./ui/navbar-menu";
 import { cn } from "../../utils/utils";
 import { IoMenuSharp, IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar({ className }: { className?: string }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [active, setActive] = useState<string | null>(null);
 
   // Function to scroll to the specific section smoothly
   const scrollToSection = (
@@ -52,7 +51,7 @@ export function Navbar({ className }: { className?: string }) {
           />
         </div>
         <div className="hidden md:block">
-          <Menu setActive={setActive}>
+          <div>
             <HoveredLink
               href="#experties"
               onClick={(e: MouseEvent<HTMLAnchorElement>) =>
@@ -93,7 +92,7 @@ export function Navbar({ className }: { className?: string }) {
             >
               Contact
             </HoveredLink>
-          </Menu>
+          </div>
         </div>
       </div>
 

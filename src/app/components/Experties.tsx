@@ -56,8 +56,8 @@ const Experties: React.FC = () => {
         <Title title="My Experties" />
 
         <div className=" flex md:flex-row flex-col justify-between   md:gap-12 gap-6">
-          {expertiesData.map((data) => (
-            <ExpertiesCard data={data} />
+          {expertiesData.map((data, index) => (
+            <ExpertiesCard key={index} data={data} />
           ))}
           {/* <ExpertiesCard />
           <ExpertiesCard /> */}

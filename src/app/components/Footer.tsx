@@ -3,10 +3,6 @@ import { FloatingDockDemo } from "./FloatingDockDemo";
 import {
   IconBrandGithub,
   IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
   IconBrandLinkedin,
   IconBrandInstagram,
   IconBrandFacebook,
