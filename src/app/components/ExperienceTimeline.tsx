@@ -60,7 +60,7 @@ export function ExperienceTimeline() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Contributed to a live open-source Node.js project for Mastercard,
             collaborating with a dynamic team to develop and enhance backend
-            functionalities. And Implemented and optimized REST full API's for
+            functionalities. And Implemented and optimized REST full APIs for
             efficient data handling.
           </p>
           <div className="grid grid-cols-2 gap-4">

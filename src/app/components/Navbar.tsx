@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, MouseEvent } from "react";
+import React, { useState, MouseEvent, useEffect } from "react";
 import { HoveredLink } from "./ui/navbar-menu";
 import { cn } from "../../utils/utils";
 import { IoMenuSharp, IoClose } from "react-icons/io5";
@@ -22,14 +22,37 @@ export function Navbar({ className }: { className?: string }) {
       });
     }
   };
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Detect scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        // You can adjust this value as per your requirement
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div
       className={cn(
-        "fixed top-0 w-full  z-[1000]  border border-transparent bg-transparent backdrop-blur-md ",
+        "fixed top-0 w-full z-[1000] border border-transparent bg-transparent transition-all duration-300",
+        isScrolled ? "bg-transparent backdrop-blur-lg" : "",
         className
       )}
     >
-      <div className="max-w-7xl mx-auto  flex items-center justify-between px-4 py-3 md:py-0">
+      <div className="max-w-7xl mx-auto  flex items-center justify-between px-4 py-3 md:py-3">
         <div>
           <h2
             onClick={() => {
@@ -51,7 +74,7 @@ export function Navbar({ className }: { className?: string }) {
           />
         </div>
         <div className="hidden md:block">
-          <div>
+          <div className="space-x-8">
             <HoveredLink
               href="#experties"
               onClick={(e: MouseEvent<HTMLAnchorElement>) =>

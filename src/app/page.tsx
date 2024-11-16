@@ -7,11 +7,9 @@ import { WorkProject } from "./components/WorkProject";
 import Skills from "./components/Skills";
 import { Contact } from "./components/Contact";
 import Footer from "./components/Footer";
-// import { HydrationOverlay } from "@builder.io/react-hydration-overlay";
 
 export default function Home() {
   return (
-    // <HydrationOverlay>
     <div className="bg-[#050709]">
       <Navbar />
       <BackgroundBoxesDemo />
@@ -38,8 +36,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    // </HydrationOverlay>
   );
 }
-
+// --hostname 192.168.47.89
 // favicon.ico

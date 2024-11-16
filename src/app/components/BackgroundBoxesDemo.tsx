@@ -18,15 +18,15 @@ export function BackgroundBoxesDemo() {
             "md:text-4xl text-2xl  md:font-normal text-white relative z-20 text-center "
           )}
         >
-          Hola! I'm <Cover>SHASHVAT SEN</Cover> — Turning Ideas into Interactive{" "}
+          Hola! I <Cover>SHASHVAT SEN</Cover> — Turning Ideas into Interactive{" "}
           <FlipWords words={words} />! <br />
         </h1>
         <p className="text-center mt-2 text-neutral-300 relative z-20  text-xs md:text-sm">
-          I'm a full-stack developer who loves to think big and code bigger!
-          Whether it's creating interactive apps, boosting website performance,
-          or pushing design boundaries, I'm all about adding that extra wow
-          factor. If you're up for an unforgettable digital journey, let's
-          connect!
+          I am a full-stack developer who loves to think big and code bigger!
+          Whether it iss creating interactive apps, boosting website
+          performance, or pushing design boundaries, I am all about adding that
+          extra wow factor. If you are up for an unforgettable digital journey,
+          let is connect!
         </p>
         <div className=" text-center mt-4">
           {/* <TailwindcssButtons /> */}
